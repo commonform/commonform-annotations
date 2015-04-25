@@ -3,7 +3,7 @@ commonform-annotations
 
 [![NPM version](https://img.shields.io/npm/v/commonform-annotations.svg)](https://www.npmjs.com/package/commonform-annotations)
 
-A dummy package for use as an npm peer dependency:
+Peer dependency for packages that manipulate Common Form annotations
 
 ```json
 {
