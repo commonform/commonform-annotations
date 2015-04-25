@@ -1,0 +1,21 @@
+{
+  "name": "commonform-annotations",
+  "description": "peer dependency for Common Form packages that produce annotations",
+  "version": "0.0.0",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (http://kemitchell.com)",
+  "bugs": "https://github.com/commonform/commonform/issues",
+  "homepage": "https://commonform.github.io",
+  "keywords": [
+    "annotation",
+    "contracts",
+    "document assembly",
+    "knowledge management",
+    "law"
+  ],
+  "peerDependencies": {
+    "commonform": "1.x"
+  },
+  "license": "Apache-2.0",
+  "main": "index",
+  "repository": "commonform/commonform-annotations"
+}
