@@ -13,13 +13,14 @@ A dummy package for use as an npm peer dependency:
 }
 ```
 
-All packages that peer-depend on this package expect as arguments (or return as outputs) Common Form annotation objects of a similar shape:
+All packages that peer-depend on this package expect as arguments (or return as outputs) Common Form annotation objects of a similar shape. For example:
 
 ```json
 {
-  source: 'name of the module that produced the annotation',
-  message: 'a message for users',
-  url: 'an optional URL to link to', // or null
-  object: 'a valid, non-child content object per commonform-validate',
-  path: ['sequence', 'of', 'keys']
+  "message": "The heading \"Indemnity\" is referenced, but not used.",
+  "object": {"heading": "Indemnity"},
+  "path": ["content", 0],
+  "source": "commonform-lint",
+  "url": null
 }
+```
