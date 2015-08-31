@@ -13,7 +13,6 @@
     "law"
   ],
   "license": "Apache-2.0",
-  "main": "index",
   "peerDependencies": {
     "commonform": "1.x"
   },
