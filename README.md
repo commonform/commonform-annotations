@@ -1,6 +1,3 @@
-commonform-annotations
----------------------
-
 For this Common Form ...
 
 ```json
