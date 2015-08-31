@@ -9,6 +9,7 @@
       "enum": [ "info", "warning", "error" ] },
     "path": {
       "type": "array",
+      "minItems": 2,
       "items": {
         "oneOf": [
           { "type": "string",
@@ -18,7 +19,9 @@
       "type": "string",
       "minLength": 1 },
     "url": {
-      "type": "string",
-      "format": "uri" } },
-  "required": [ "message", "level", "path", "source", "url" ],
+      "oneOf": [
+        { "type": "string",
+          "format": "uri" },
+        { "type": "null" } ] } },
+  "required": [ "level", "message", "path", "source", "url" ],
   "additionalProperties": false }
