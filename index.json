@@ -6,7 +6,7 @@
       "type": "string",
       "minLength": 1 },
     "level": {
-      "enum": [ "info", "warning", "error" ] },
+      "enum": [ "info", "warn", "error" ] },
     "path": {
       "type": "array",
       "minItems": 2,
