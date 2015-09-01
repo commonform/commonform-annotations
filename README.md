@@ -1,37 +1,24 @@
-commonform-annotations
----------------------
-
-[![NPM version](https://img.shields.io/npm/v/commonform-annotations.svg)](https://www.npmjs.com/package/commonform-annotations)
-
-Peer dependency for packages that manipulate Common Form annotations
-
-```json
-{
-  "peerDependencies": {
-	"commonform-annotations": "1.x"
-  }
-}
-```
-
-All packages that peer-depend on this package expect as arguments (or return as outputs) Common Form annotation objects of a similar shape.
-
 For this Common Form ...
 
 ```json
-{
-  "content":[
-    {"reference":"Indemnity"}
-  ]
-}
+{ "content": [
+    { "reference":"Indemnity" } ] }
 ```
 
 ... an annotation might be ...
 
 ```json
-{
-  "message": "The heading \"Indemnity\" is referenced, but not used.",
-  "path": ["content", 0],
+{ "message": "The heading \"Indemnity\" is referenced, but not used.",
+  "level": "info",
+  "path": [ "content", 0 ],
   "source": "commonform-lint",
-  "url": null
-}
+  "url": null }
 ```
+
+# Levels
+
+`"info"` denotes annotations that provide additional information or suggestions, such as to flag an archaism in form text.
+
+`"warn"` denotes annotations that indicate possible oversights, such as notice that a fill-in-the-blank has not been filled in.
+
+`"error"` denotes structural or other significant faults in a form, such as uses of terms that aren't defined.

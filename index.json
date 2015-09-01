@@ -1,0 +1,27 @@
+{ "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Common Form Annotation",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string",
+      "minLength": 1 },
+    "level": {
+      "enum": [ "info", "warn", "error" ] },
+    "path": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "oneOf": [
+          { "type": "string",
+            "minLength": 1 },
+          { "type": "number" } ] } },
+    "source": {
+      "type": "string",
+      "minLength": 1 },
+    "url": {
+      "oneOf": [
+        { "type": "string",
+          "format": "uri" },
+        { "type": "null" } ] } },
+  "required": [ "level", "message", "path", "source", "url" ],
+  "additionalProperties": false }
